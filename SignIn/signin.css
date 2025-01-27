@@ -1,0 +1,354 @@
+
+
+/*--Form/Sign up page css style--*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+body{
+    color: #fff;
+    background: #000;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(0deg, rgba(0, 8, 29, 0.4), rgba(2, 4, 8, 0.4)), url('/assets/header-image.png');
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+    overflow: hidden;
+   
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+nav .logo{
+    width: 140px;
+    cursor: pointer;
+}
+
+nav .logolink{
+    background: none;
+}
+
+.header form{
+    width:35%; 
+    display: flex;
+    background-color: rgba(0,0,0,.75);;
+    position: relative;
+    margin: auto;
+}
+
+.header .signform{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 50px 50px;
+}
+
+.signform h1{
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 30px; 
+}
+
+.signform input{
+   margin-bottom: 20px;
+   padding: 15px;
+   width: 100%;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.buttons .signin{
+    text-align: center;
+    background: #db0001;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    padding: 10px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.buttons p{
+    font-size: 1rem;
+    opacity: 0.8;
+    margin: 2px 0;
+}
+
+.buttons .sign-code{
+    text-align: center;
+    background: #444040;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.buttons .forgotpassword{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.header .bottom{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bottom .check{
+    margin: 0 !important;
+    transform: scale(1.5); /* Increases the size of the checkbox */
+    width: auto; /* Keeps the width automatic */
+    height: auto; /* Keeps the height automatic */
+    flex-shrink: 0; /* Prevents shrinking in flex container */
+    cursor: pointer; /* Changes the cursor to a pointer for better UX */
+}
+
+.bottom-text{
+    display: flex;
+    align-items: center;
+    margin-top: 40px
+}
+
+.bottom-text p{
+    text-align: left;
+    font-size: 1rem;
+    color: #bbb4b4
+}
+
+.bottom-text a{
+    text-decoration: none;
+    background: none;
+    padding: 0;
+    margin-left: 5px;
+    color: #FFFFFF;
+}
+
+.bottom-text a:hover{
+    text-decoration: underline;
+}
+
+.dedicated{
+    margin-top: 30px;
+}
+
+.dedicated p{
+    font-size: 0.8rem;
+    color: #aaa3a3
+}
+
+.dedicated a{
+    font-size: 0.8rem;
+    color: #2788e2
+}
+
+
+.footer{
+    padding: 20rem 10% 10px;
+    color: #777;
+    background-color: rgba(0,0,0,.75);
+}
+
+.footer h5{
+    margin-bottom: 20px;
+}
+
+.footer .questions{
+    color: #b1a9a9;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.footer .row{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a{
+    color: #b1a9a9;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    transition: transform 0.5s ease;
+    text-decoration: underline
+}
+
+.footer .col a:hover{
+    transform: translateY(-3px);
+   
+}
+
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.footer p{
+    color: #777;
+    font-size: 14px;
+    padding-bottom: 60px;
+}
+
+.select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid rgb(192, 182, 182);
+    margin-right: 20px;
+    padding: 5px 30px;
+    border-radius: 5px;
+    width: 120px;
+  }
+  
+  select {
+     background-color:transparent;
+     color: #F3F3F3;
+     outline: 0;
+     border: 0;
+     font-size: 0.9rem;
+  }
+  
+  .location{
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  /* Responsive styles */
+@media screen and (max-width: 1024px) {
+    .header form {
+        width: 50%; /* Adjust form width for medium screens */
+        padding: 20px;
+    }
+
+    .footer .row {
+        flex-direction: column; /* Stack footer columns vertically */
+        align-items: flex-start;
+    }
+
+    .footer .col {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav .logo {
+        width: 120px; /* Reduce logo size */
+    }
+
+    .header form {
+        width: 70%; /* Reduce form width for smaller screens */
+        padding: 15px;
+    }
+
+    .signform h1 {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+
+    .signform input {
+        padding: 10px; /* Reduce input padding */
+    }
+
+    .buttons .signin, 
+    .buttons .sign-code {
+        font-size: 0.9rem; /* Adjust button font size */
+        padding: 8px;
+    }
+
+    .bottom {
+        flex-direction: column; /* Stack checkbox and label */
+        align-items: flex-start;
+    }
+
+    .footer .row {
+        gap: 10px; /* Add spacing between stacked columns */
+    }
+
+    .select {
+        margin: 20px auto; /* Center the select dropdown */
+        width: 100px; /* Adjust width */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 10px; /* Reduce padding */
+    }
+
+    .header form {
+        width: 90%; /* Full width for very small screens */
+        padding: 10px;
+    }
+
+    .signform h1 {
+        font-size: 1.2rem;
+    }
+
+    .signform input {
+        font-size: 0.9rem; /* Smaller text size */
+        padding: 8px;
+    }
+
+    .buttons .signin, 
+    .buttons .sign-code {
+        font-size: 0.8rem; /* Smaller buttons */
+        padding: 6px;
+    }
+
+    .footer .questions {
+        font-size: 13px; /* Adjust text size in the footer */
+    }
+
+    .footer .col a {
+        font-size: 12px; /* Smaller links */
+    }
+}
+
+  
+
