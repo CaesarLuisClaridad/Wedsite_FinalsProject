@@ -16,7 +16,6 @@ body {
 }
 
 .main-container {
-  /* position: relative; */
   overflow: hidden;
 }
 
@@ -108,7 +107,7 @@ select {
   flex-direction: column;
   border-radius: 30px;
   position: relative;
-  overflow: hidden; /* Added this */
+  overflow: hidden;
   z-index: 999;
 }
 
@@ -237,7 +236,6 @@ select {
   overflow: hidden;
 }
 
-/* Fade effect for the first image */
 .swiper-container::before {
   content: "";
   position: absolute;
@@ -250,7 +248,6 @@ select {
   pointer-events: none;
 }
 
-/* Fade effect for the last image */
 .swiper-container::after {
   content: "";
   position: absolute;
@@ -263,18 +260,15 @@ select {
   pointer-events: none;
 }
 
-/* Disable fade by default */
 .swiper-container::before,
 .swiper-container::after {
   display: none;
 }
 
-/* Fade effect for the first image */
 .swiper-container.fade-left::before {
   display: block;
 }
 
-/* Fade effect for the last image */
 .swiper-container.fade-right::after {
   display: block;
 }
@@ -291,7 +285,7 @@ select {
   font-size: 18px;
   flex-shrink: 0;
   width: calc((100% - 50px) / 6);
-  transition: transform 0.5s ease-in-out; /* Adding smooth transition */
+  transition: transform 0.5s ease-in-out; 
 }
 
 .swiper-slide img {
@@ -301,7 +295,7 @@ select {
   object-fit: cover;
   border-radius: 20px;
   cursor: pointer;
-  transition: transform 0.5s ease-in-out; /* Add transition to images too */
+  transition: transform 0.5s ease-in-out; 
 }
 
 .swiper-button-next,
@@ -445,18 +439,18 @@ select {
 }
 
 .faq .faq-arrow {
-  font-size: 2.4rem; /* Size of the "+" */
+  font-size: 2.4rem; 
   color: #FFFFFF;
   position: absolute;
   font-weight: 200;
-  right: 30px; /* Position it at the right side */
-  top: 50%; /* Vertically center */
-  transform: translateY(-50%); /* Center vertically */
-  transition: transform 0.3s ease; /* Smooth transition */
+  right: 30px; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  transition: transform 0.3s ease; 
 }
 
 .faq input[type="checkbox"]:checked + label > .faq-arrow {
-  transform: translateY(-50%) rotate(45deg); /* Rotate the + to a cross (X) when checked */
+  transform: translateY(-50%) rotate(45deg); 
 }
 
 .faq input[type="checkbox"]:not(:checked) + label > .faq-arrow {

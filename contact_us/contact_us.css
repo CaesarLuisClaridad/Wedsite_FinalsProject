@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: black;
+    padding: 0 25rem;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-container img {
+    width: 110px;
+    height: 80px;
+    padding: 0;
+    margin: 0;
+    object-fit: contain;
+  }
+  
+  .logo-container span {
+    font-size: 2rem;
+    color: #ffffff;
+    margin: 0 10px;
+    font-weight: 200;
+  }
+  
+  .logo-container a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1rem;
+  }
+  
+  .logo-container a:hover {
+    text-decoration: underline;
+  }
+  
+  .buttons .join {
+    background-color: transparent;
+    border: 1px solid white;
+    color: #ffffff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: border 0.3s ease-in;
+    cursor: pointer;
+  }
+  
+  .buttons .join a{  
+      color: #ffffff;
+  }
+  
+  .buttons .join:hover {
+    border: 2px solid white;
+  }
+  
+  .buttons .signin {
+    background-color: red;
+    color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+  
+  .buttons .signin a{
+      color: #ffffff; 
+    }
+  
+  .buttons .signin:hover {
+    background-color: rgb(219, 14, 14);
+  }
+
+  /*--Main--*/
+
+  .questions {
+  background-color: #f3f3f3;
+  padding: 2rem 8rem;
+  overflow: hidden;
+}
+
+.question {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.container_1 h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.bx-arrow-back{
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.back{
+    margin-left: 15px;
+    text-decoration: none;
+    color: #000;
+}
+  
+  .all-question {
+    flex-basis: 70%;
+    overflow: hidden;
+}
+  
+/*--article--*/
+
+.contact{
+    width: 100%;
+    padding: 3rem 25rem;
+}
+
+.contact_info{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_info h1{
+    font-size: 2.5rem;
+}
+
+.contact .thoughts{
+    margin-top: 2rem;
+}
+
+.thoughts h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.thoughts .input_txt{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid rgb(183, 174, 174);
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+.thoughts_links{
+    margin-top: 3rem;
+}
+
+.thoughts_links ul {
+    margin-top: 1rem;
+    border-bottom: 1px solid black;
+}
+
+.thoughts_links ul li {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid black;
+    color: #000000;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 10px 0;
+}
+
+
+.thoughts_links ul li a {
+    color: #000000;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+.thoughts_links ul li i {
+    font-size: 1.2rem; 
+    margin-right: 10px;
+    flex-shrink: 0; 
+    text-decoration: none !important;
+    list-style-type: none !important;
+}
+
+
+
+
+
+
+/*---footer--*/
+.footer {
+    width: 100%;
+    background: linear-gradient(
+        10deg,
+        rgba(229, 9, 20, 0) 58%,
+        rgb(229, 9, 20) 128%
+      ),
+      #000;
+      padding: 1rem 25rem;
+      color: #FFFFFF;
+}
+
+.footer-list ul{
+    padding: 0;
+}
+
+.footer-list li{
+    list-style: none !important;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.footer-content-1{
+    padding: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.footer-content-1 a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.footer-content-1 button{
+    padding: 10px 40px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 0;
+    text-decoration: none;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+  
+select {
+    background-color:transparent;
+    width: 250px;
+    color: #656565;
+    outline: 0;
+    border: 1px solid #656565;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+ul li a{
+    color: #989696;
+}
+
+ul li{
+    margin-bottom: 10px;
+    color: #656565;
+    font-size: 0.9rem;
+}
+  
