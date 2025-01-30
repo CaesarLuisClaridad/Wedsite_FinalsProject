@@ -19,7 +19,7 @@ body{
 .header{
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(0deg, rgba(0, 8, 29, 0.4), rgba(2, 4, 8, 0.4)), url('../assets/header-image.png');
+    background-image: linear-gradient(0deg, rgba(0, 8, 29, 0.4), rgba(2, 4, 8, 0.4)), url('/assets/header-image.png');
     background-size: cover;
     background-position: center;
     padding: 10px 8%;
