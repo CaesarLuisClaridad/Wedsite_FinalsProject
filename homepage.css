@@ -119,7 +119,7 @@ select {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  background-image: url("assets/header-image.png");
+  background-image: url("./assets/header-image.png");
   overflow: hidden;
   position: relative;
   border-radius: 20px 20px 0 0;
